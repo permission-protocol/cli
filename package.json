@@ -1,0 +1,32 @@
+{
+  "name": "@permission-protocol/cli",
+  "version": "0.1.0",
+  "description": "Permission Protocol CLI for scanning agent projects",
+  "license": "MIT",
+  "type": "commonjs",
+  "bin": {
+    "pp-scan": "dist/cli.js"
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "build": "tsup",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@permission-protocol/sdk": "file:../pp-debug/permission-protocol-sdk/packages/sdk",
+    "chalk": "4.1.2",
+    "commander": "11.1.0"
+  },
+  "devDependencies": {
+    "@types/node": "20.19.35",
+    "tsup": "8.5.1",
+    "typescript": "5.9.3"
+  }
+}
